@@ -60,3 +60,12 @@ typings/
 # Debug file
 bin/debug.js
 .vscode
+
+# test generated files
+bin/barrel/Batchedbarrel
+bin/barrel/Instancedbarrel
+bin/barrel/barrel_batchTable.json
+bin/barrel/barrel.b3dm
+bin/barrel/barrel.glb
+bin/barrel/barrel.gltf
+bin/barrel/barrel.i3dm
