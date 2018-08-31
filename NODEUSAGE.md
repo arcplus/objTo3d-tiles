@@ -3,48 +3,48 @@
 Install package from npm.
 
 ```
-    npm install obj23dtiles
+    npm install obj23dtilesp
 ```
 
 ## Convert to `.gltf`
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var gltfPath = './bin/barrel/barrel.gltf';
-    obj23dtiles(objPath, gltfPath);
+    obj23dtilesp.obj23dtiles(objPath, gltfPath);
 ```
 
 ## Convert to `.glb`
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var glbPath = './bin/barrel/barrel.glb';
-    obj23dtiles(objPath, glbPath, {binary: true});
+    obj23dtilesp.obj23dtiles(objPath, glbPath, {binary: true});
 ```
 
 ## Convert to `.b3dm`
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var b3dmPath = './bin/barrel/barrel.b3dm';
-    obj23dtiles(objPath, b3dmPath, {b3dm: true});
+    obj23dtilesp.obj23dtiles(objPath, b3dmPath, {b3dm: true});
 ```
 
 Or use custom BatchTable.
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var b3dmPath = './bin/barrel/barrel.b3dm';
     var customBatchTable = './bin/barrel/customBatchTable.json' // file or JS Object.
-    obj23dtiles(objPath, b3dmPath, {
+    obj23dtilesp.obj23dtiles(objPath, b3dmPath, {
         b3dm: true,
         customBatchTable: customBatchTable
     });
@@ -53,11 +53,11 @@ Or use custom BatchTable.
 ## Convert to `.i3dm`
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var i3dmPath = './bin/barrel/barrel.i3dm';
-    obj23dtiles(objPath, i3dmPath, {
+    obj23dtilesp.obj23dtiles(objPath, i3dmPath, {
         i3dm: true,
         customFeatureTable: {
             position: [
@@ -79,11 +79,11 @@ Or use custom BatchTable.
 Or use custom BatchTable.
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var i3dmPath = './bin/barrel/barrel.i3dm';
-    obj23dtiles(objPath, i3dmPath, {
+    obj23dtilesp.obj23dtiles(objPath, i3dmPath, {
         i3dm: true,
         customFeatureTable: {
             position: [
@@ -117,21 +117,21 @@ Or use custom BatchTable.
 * Convert to `.b3dm` tileset.
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var tilesetPath = './bin/barrel/barrel.b3dm';
-    obj23dtiles(objPath, tilesetPath, {tileset: true});
+    obj23dtilesp.obj23dtiles(objPath, tilesetPath, {tileset: true});
 ```
 
 Or use custom tileset options and BatchTable.
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var tilesetPath = './bin/barrel/barrel.b3dm';
-    obj23dtiles(objPath, tilesetPath, {
+    obj23dtilesp.obj23dtiles(objPath, tilesetPath, {
         tileset: true,
         tilesetOptions: {
             longitude:      -1.31968,
@@ -168,11 +168,11 @@ Or use custom tileset options and BatchTable.
 * Convert to `.i3dm` tileset.
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var tilesetPath = './bin/barrel/barrel.i3dm';
-    obj23dtiles(objPath, tilesetPath, {
+    obj23dtilesp.obj23dtiles(objPath, tilesetPath, {
         tileset: true,
         i3dm: true,
         customFeatureTable: {
@@ -195,11 +195,11 @@ Or use custom tileset options and BatchTable.
 Or use custom tileset options and BatchTable.
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
 
     var objPath = './bin/barrel/barrel.obj';
     var tilesetPath = './bin/barrel/barrel.i3dm';
-    obj23dtiles(objPath, tilesetPath, {
+    obj23dtilesp.obj23dtiles(objPath, tilesetPath, {
         tileset: true,
         i3dm: true,
         customFeatureTable: {
@@ -243,10 +243,10 @@ Or use custom tileset options and BatchTable.
 ## Combine tilesets
 
 ```javascript
-    var obj23dtiles = require('obj23dtiles');
+    var obj23dtilesp = require('obj23dtilesp');
     var fs = require('fs');
 
-    var combine = obj23dtiles.combine;
+    var combine = obj23dtilesp.obj23dtiles.combine;
     var outputPath = './bin/barrel/output/tileset.json';
 
     combine({inputDir : './bin/barrel/output'})

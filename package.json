@@ -1,7 +1,7 @@
 {
-  "name": "obj23dtiles",
+  "name": "obj23dtilesp",
   "version": "1.0.0",
-  "description": "obj to 3d tiles",
+  "description": "obj to 3d tiles returning promises",
   "main": "lib/obj23dtiles.js",
   "directories": {
     "lib": "lib"
@@ -19,7 +19,7 @@
   ],
   "preferGlobal": true,
   "bin": {
-    "obj23dtiles" : "bin/obj23dtiles.js"
+    "obj23dtilesp" : "bin/obj23dtiles.js"
   },
   "author": "princessgod & stoneflyop1",
   "license": "ISC",
