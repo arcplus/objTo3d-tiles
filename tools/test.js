@@ -28,7 +28,7 @@ function logout(stdout, error, command) {
     }
 
     finished ++;
-    if(finished === commands.length) {console.log('all down! ' + (errcount ? ('error: ' + error) : 'passed.'));}
+    if(finished === commands.length) {console.log('all done! ' + (errcount ? ('error: ' + error) : 'passed.'));}
 }
 
 function test() {
