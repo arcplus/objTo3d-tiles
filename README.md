@@ -143,6 +143,8 @@ You can combine tilesets into one `tileset.json` as external tileset.
 
 ```
 obj23dtilesp combine -i ./bin/barrel/output
+
+obj23dtilesp merge -i ./bin/barrel/output
 ```
 
 ## Using as node module

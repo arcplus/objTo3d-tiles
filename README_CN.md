@@ -140,6 +140,8 @@ obj23dtilesp -i ./bin/barrel/barrel.obj --tileset --i3dm
 
 ```
 obj23dtilesp combine -i ./bin/barrel/output/
+
+obj23dtilesp merge -i ./bin/barrel/output/
 ```
 
 ## 作为 Node 模块使用

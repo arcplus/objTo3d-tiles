@@ -4,7 +4,9 @@ var Cesium = require('cesium');
 var path = require('path');
 var yargs = require('yargs');
 var fsExtra = require('fs-extra');
-var combine = require('../lib/combineTileset');
+var combineTileset = require('../lib/combineTileset');
+var combine = combineTileset.combineTileset;
+var merge = combineTileset.mergeTileset;
 var obj23dtiles = require('../lib/obj23dtiles');
 
 var defined = Cesium.defined;
@@ -163,11 +165,31 @@ var argv = yargs
         }
     })
     .command('combine', 'Combine tilesets in to one tileset.json.')
+    .command('merge', 'Merge tilesets in to one tileset.json.')
     .parse(args);
 
 if(argv._[2] === 'combine') {
     console.time('Total');
     return combine({
+        inputDir: argv.input,
+        outputTileset: argv.output,
+    })
+    .then(function(result) {
+        var tileset = result.tileset;
+        var output = result.output;
+        return fsExtra.writeJson(output, tileset, {spaces: 2});
+    })
+    .then(function() {
+        console.timeEnd('Total');
+    })
+    .catch(function(err) {
+        console.log(err);
+    });
+}
+
+if(argv._[2] === 'merge') {
+    console.time('Total');
+    return merge({
         inputDir: argv.input,
         outputTileset: argv.output,
     })
