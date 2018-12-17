@@ -31,6 +31,11 @@ obj23dtilesp -i ./bin/barrel/barrel.obj
 // Export barrel.gltf at obj folder.
 ```
 
+```
+obj23dtilesp -i ./bin/barrel/barrel.obj -d
+// Export barrel.gltf at obj folder, and enable draco compression
+```
+
 * Convert `.obj` to `.glb`
 
 ```

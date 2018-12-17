@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}\\bin\\obj23dtiles.js",
-            "args": ["-i", ".\\bin\\barrel\\barrel.obj", "-o", ".\\bin\\barrel\\model\\model.gltf"]
+            "args": ["-i", ".\\bin\\barrel\\barrel.obj", "-o", ".\\bin\\barrel\\modelTest\\model.gltf"]
         },
         {
             "type": "node",
@@ -38,7 +38,7 @@
             "name": "Launch Tileset",
             "program": "${workspaceFolder}\\bin\\obj23dtiles.js",
             "args": ["-i", ".\\bin\\barrel\\barrel.obj", 
-                "-o", ".\\bin\\barrel\\modelDacro\\tileset.json", 
+                "-o", ".\\bin\\barrel\\modelTileset\\tileset.json", 
                 "--tileset",
             "-p", ".\\bin\\barrel\\customTilesetOptions.json"]
         },
@@ -48,7 +48,7 @@
             "name": "Launch Tileset With Draco ",
             "program": "${workspaceFolder}\\bin\\obj23dtiles.js",
             "args": ["-i", ".\\bin\\barrel\\barrel.obj", 
-                "-o", ".\\bin\\barrel\\modelDacro\\tileset.json", 
+                "-o", ".\\bin\\barrel\\modelTilesetDacro\\tileset.json", 
                 "-d", "--tileset",
             "-p", ".\\bin\\barrel\\customTilesetOptions.json"]
         }

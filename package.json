@@ -1,6 +1,6 @@
 {
   "name": "obj23dtilesp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "obj to 3d tiles returning promises",
   "main": "lib/obj23dtiles.js",
   "directories": {

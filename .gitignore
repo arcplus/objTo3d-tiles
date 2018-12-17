@@ -67,6 +67,7 @@ bin/barrel/barrel.b3dm
 bin/barrel/barrel.glb
 bin/barrel/barrel.gltf
 bin/barrel/barrel.i3dm
+bin/barrel/model*
 
 # Debug file
 bin/debug.js

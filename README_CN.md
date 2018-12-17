@@ -29,6 +29,11 @@ obj23dtilesp -i ./bin/barrel/barrel.obj
 // 在模型目录导出 barrel.gltf
 ```
 
+```
+obj23dtilesp -i ./bin/barrel/barrel.obj -d
+// 在模型目录导出 barrel.gltf, 并启用draco压缩
+```
+
 * 转换 `.obj` 为 `.glb`
 
 ```
