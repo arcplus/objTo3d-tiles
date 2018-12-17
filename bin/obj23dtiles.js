@@ -40,6 +40,12 @@ var argv = yargs
             type : 'boolean',
             default : defaults.binary
         },
+        compress : {
+            alias: 'd',
+            describe: 'Converting a glTF to Draco glTF',
+            type: 'boolean',
+            default: defaults.compress
+        },
         batchId : {
             describe : 'Add _BTACHID to glTF or glb file.',
             type : 'boolean',
@@ -244,6 +250,9 @@ if (argv.i3dm || extension === '.i3dm') {
     argv.i3dm = true;
     extension = '.i3dm';
 }
+if (!fsExtra.pathExistsSync(outputDirectory)) {
+    fsExtra.mkdirSync(outputDirectory);
+}
 outputPath = path.join(outputDirectory, name + extension);
 
 var overridingTextures = {
@@ -276,7 +285,8 @@ var options = {
     specularGlossiness : argv.specularGlossiness,
     materialsCommon : argv.materialsCommon,
     overridingTextures : overridingTextures,
-    outputDirectory : outputDirectory
+    outputDirectory : outputDirectory,
+    compress: argv.compress
 };
 
 obj23dtiles(objPath, outputPath, options);

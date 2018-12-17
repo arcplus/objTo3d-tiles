@@ -19,7 +19,7 @@
   ],
   "preferGlobal": true,
   "bin": {
-    "obj23dtilesp" : "bin/obj23dtiles.js"
+    "obj23dtilesp": "bin/obj23dtiles.js"
   },
   "author": "princessgod && stoneflyop1",
   "license": "ISC",
@@ -29,8 +29,9 @@
   "homepage": "https://github.com/arcplus/objTo3d-tiles#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "cesium": "^1.38.0",
+    "cesium": "^1.52.0",
     "fs-extra": "^4.0.2",
+    "gltf-pipeline": "^2.0.1",
     "jpeg-js": "^0.3.3",
     "mime": "^2.0.3",
     "pngjs": "^3.3.0",
