@@ -57,9 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
-# Debug file
-bin/debug.js
-.vscode
+
 
 # test generated files
 bin/barrel/Batchedbarrel
@@ -69,3 +67,11 @@ bin/barrel/barrel.b3dm
 bin/barrel/barrel.glb
 bin/barrel/barrel.gltf
 bin/barrel/barrel.i3dm
+
+# Debug file
+bin/debug.js
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\bin\\obj23dtiles.js",
+            "args": ["-i", ".\\bin\\barrel\\barrel.obj", "-o", ".\\bin\\barrel\\model\\model.gltf"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch With Draco",
+            "program": "${workspaceFolder}\\bin\\obj23dtiles.js",
+            "args": ["-i", ".\\bin\\barrel\\barrel.obj", "-o", ".\\bin\\barrel\\modelDacro\\modelDacro.gltf", "-d"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch glb",
+            "program": "${workspaceFolder}\\bin\\obj23dtiles.js",
+            "args": ["-i", ".\\bin\\barrel\\barrel.obj", "-o", ".\\bin\\barrel\\model\\model.glb", "-b"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch glb With Draco",
+            "program": "${workspaceFolder}\\bin\\obj23dtiles.js",
+            "args": ["-i", ".\\bin\\barrel\\barrel.obj", "-o", ".\\bin\\barrel\\modelDacro\\modelDacro.glb", "-b", "-d"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Tileset With Draco ",
+            "program": "${workspaceFolder}\\bin\\obj23dtiles.js",
+            "args": ["-i", ".\\bin\\barrel\\barrel.obj", 
+                "-o", ".\\bin\\barrel\\modelDacro\\tileset.json", 
+                "-d", "--tileset",
+            "-p", ".\\bin\\barrel\\customTilesetOptions.json"]
+        }
+    ]
+}
