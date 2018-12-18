@@ -16,7 +16,8 @@ var commands = [
     'node ./bin/obj23dtiles.js -i ./bin/barrel/barrel.obj --tileset --i3dm -f ./bin/barrel/customFeatureTable.json',
     'node ./bin/obj23dtiles.js -i ./bin/barrel/barrel.obj --tileset --i3dm -f ./bin/barrel/customFeatureTable.json -p ./bin/barrel/customTilesetOptions.json -c ./bin/barrel/customI3dmBatchTable.json',
     'node ./bin/obj23dtiles.js merge -i ./bin/barrel/output',
-    'node ./bin/obj23dtiles.js -i ./bin/barrel/barrel.obj -o ./bin/barrel/modelTilesetDacro/tileset.json --tileset -p ./bin/barrel/customTilesetOptions.json -d',
+    'node ./bin/obj23dtiles.js -i ./bin/barrel/barrel.obj -o ./bin/barrel/modelDraco/modelDraco.gltf -d',
+    'node ./bin/obj23dtiles.js -i ./bin/barrel/barrel.obj -o ./bin/barrel/modelTilesetDrac/tileset.json --tileset -p ./bin/barrel/customTilesetOptions.json -d',
 ];
 
 var errcount = 0;
